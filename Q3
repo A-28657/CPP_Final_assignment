@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int attendence,total_score;
+    float test_score;
+    
+    cout << "enter scores: ";
+    cin >> attendence >> test_score >> total_score;
+
+    if(attendence>=50 && test_score>=0.7 && total_score>=5600)
+    {
+        cout << "grade 10";
+    }
+    
+    else if(attendence>=50 && test_score>=0.7)
+    {
+        cout << "grade 9";
+    }
+    else if(test_score>=0.7 && total_score>=5600)
+    {
+        cout << "grade 8";
+    }
+    
+    else if(attendence>=50 && total_score>=5600)
+    {
+        cout << "grade 7";
+    }
+    else if(attendence>=50 || test_score>=0.7 || total_score>=5600)
+    {
+        cout << "grade 6";
+    }
+    else
+    {
+        cout << "grade 5";
+    }
+}
